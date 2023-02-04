@@ -1,0 +1,123 @@
+.contact-section {
+  background-color: var(--secondary-color);
+  padding-top: 100px;
+
+  .contact-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0;
+    }
+  }
+
+  .contact-container {
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .contact-info {
+      background-color: var(--text-color);
+      padding: 15px;
+      margin: 20px;
+      border-radius: 20px;
+      .contact-message {
+        color: rgb(239, 229, 229);
+
+        h2 {
+          margin-bottom: 0;
+        }
+        p {
+          font-weight: 300;
+        }
+      }
+      .contact-handles {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        .callAndMail {
+          padding-top: 20px;
+          display: flex;
+          a {
+            color: rgb(239, 229, 229);
+          }
+        }
+      }
+      .contact-links {
+        font-size: 1.3em;
+        a {
+          background-color: var(--primary-color);
+          width: max-content;
+          padding: 5px;
+          border-radius: 10px;
+
+          color: var(--text-color);
+        }
+      }
+    }
+
+    .contact-form {
+      small {
+        color: red;
+      }
+      align-self: center;
+      padding: 20px;
+      .input-div {
+        width: max-content;
+        margin-bottom: 30px;
+
+        input {
+          color: var(--page-nav-color);
+          width: 100%;
+          margin-top: 10px;
+          font-size: 1.2em;
+          padding: 10px;
+          border: solid var(--page-nav-color);
+          border-radius: var(--border-radius);
+          outline: none;
+          border-width: 0.5px;
+          background-color: inherit;
+        }
+        input::placeholder {
+          opacity: 0.5;
+        }
+      }
+      .textarea-div {
+        margin-bottom: 30px;
+
+        textarea {
+          color: var(--page-nav-color);
+          background-color: inherit;
+          width: 100%;
+          border-width: 0.5px;
+          margin-top: 10px;
+          padding: 10px;
+          height: 100px;
+          border-color: var(--page-nav-color);
+          outline: var(--text-color);
+          font-size: 1.2em;
+          border-radius: var(--border-radius);
+        }
+      }
+      form {
+        margin-bottom: 30px;
+      }
+    }
+
+    .btn {
+      height: 50px;
+      button {
+        font-size: 1.1em;
+        background-color: var(--primary-color);
+        border-radius: var(--border-radius);
+        border: hidden;
+      }
+      button:hover {
+        background-color: var(--primary-color-hover);
+      }
+    }
+  }
+}

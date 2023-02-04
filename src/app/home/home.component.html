@@ -1,0 +1,73 @@
+<unity-nav></unity-nav>
+<section
+  class="hero-page"
+  data-aos="fade-up"
+  data-aos-duration="1500"
+  data-aos-once="true"
+>
+  <div class="hero-container">
+    <div class="hero-item1">
+      <h1>TODAY: {{ getTime() }}</h1>
+      <h3 id="hero-item-h3">
+        EXCERCISE DONE: <span>{{ workoutCompleted() }}</span>
+      </h3>
+      <div class="hero-btn">
+        <button type="button" [routerLink]="'/workouts'">GET FIT</button>
+      </div>
+    </div>
+    <div class="hero-item2">
+      <img src="/assets/images/unity-image.png" alt="" />
+    </div>
+  </div>
+</section>
+
+<!-- PAGE NAV CONTAINER -->
+<section class="flex-section">
+  <div class="flex-container">
+    <div class="flex-items" *ngFor="let pNav of pageNav">
+      <div class="flex-items-wrapper">
+        <span class="material-symbols-outlined"> {{ pNav.icon }} </span>
+        <h2 class="flex-h2">{{ pNav.title }}</h2>
+        <p class="flex-p">{{ pNav.statement }}</p>
+        <a class="flex-a" routerLink="{{ pNav.link }}">{{
+          pNav.link_message
+        }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section class="indexguide-section">
+  <div class="indexguide-headers">
+    <h2 style="font-size: 2.3rem">Some starting points</h2>
+    <h3 style="font-weight: 300">
+      Not sure where to begin? Click on one of the packages to get you started
+      with your daily grinds.
+    </h3>
+  </div>
+  <div class="indexguide-flex">
+    <a
+      class="indexguide-flexitems"
+      href="{{ programs.href }}"
+      data-aos="zoom-out-up"
+      data-aos-once="true"
+      *ngFor="let programs of pageGuide"
+    >
+      <div class="indexguide-h3">
+        <h3>{{ programs.title }}</h3>
+      </div>
+      <div class="img-div">
+        <img src="{{ programs.image }}" alt="{{ programs.alt }}" />
+      </div>
+      <div class="indexguide-msg">
+        <h5>{{ programs.packageType }}</h5>
+        <h4>{{ programs.type }}</h4>
+      </div>
+    </a>
+  </div>
+  <div class="indexguide-btn">
+    <button routerLink="/workouts">Display All</button>
+  </div>
+</section>
+<unity-footer></unity-footer>

@@ -1,0 +1,22 @@
+{
+  "Workout": [
+    {
+      "title": " Upper Body and HITT ",
+      "numOfWorkouts": 5,
+      "date": "1/16/2023",
+      "id": 1
+    },
+    {
+      "title": " Upper Body and HITT ",
+      "numOfWorkouts": 5,
+      "date": "1/16/2023",
+      "id": 2
+    },
+    {
+      "title": " Upper Body and HITT ",
+      "numOfWorkouts": 5,
+      "date": "1/16/2023",
+      "id": 3
+    }
+  ]
+}

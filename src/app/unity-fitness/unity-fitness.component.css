@@ -1,0 +1,96 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.main .web-logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.main .web-logo .logo {
+  display: flex;
+  padding: 30px;
+  text-decoration: none;
+  font-size: 2.3em;
+}
+.main .web-logo .logo-span {
+  text-align: start;
+  text-shadow: 2px 2px 3px var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+.main .intro-container {
+  padding: 40px;
+  padding-left: 100px;
+  padding-right: 50px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .intro-container .intro-headers .intro-h1 {
+  color: var(--text-color);
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  line-height: 1.6;
+  margin: 0;
+}
+.main .intro-container .intro-headers .intro-p {
+  font-size: 1.4em;
+  font-weight: 300;
+  color: var(--text-color);
+  margin-bottom: 50px;
+}
+.main .intro-container .intro-image {
+  width: 40%;
+  height: 40%;
+}
+.main .intro-container .intro-image img {
+  width: 100%;
+  height: 100%;
+}
+.main .intro-container .login-Btn {
+  height: 15%;
+  width: 30%;
+  margin-bottom: 20px;
+}
+.main .intro-container .login-Btn button {
+  background-color: var(--primary-color);
+  border-style: hidden;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+.main .intro-container .login-Btn button:hover {
+  background-color: var(--primary-color-hover);
+}
+.main .intro-container .noAccount {
+  font-size: 1.05em;
+}
+.main .intro-container .noAccount a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--page-nav-color);
+}
+.main .custom-shape-divider-bottom-1671827507 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.main .custom-shape-divider-bottom-1671827507 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 127px;
+}
+.main .custom-shape-divider-bottom-1671827507 .shape-fill {
+  fill: var(--page-nav-color);
+}/*# sourceMappingURL=unity-fitness.component.css.map */

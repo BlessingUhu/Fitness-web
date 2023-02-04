@@ -1,0 +1,290 @@
+@charset "UTF-8";
+:root {
+  --background-color: #fff;
+  --secondary-color: #f0f8ff;
+  --page-nav-color: #020887;
+  --page-nav-hover: #141cba;
+  --text-color: #000000;
+  --other-text-color: white;
+  --primary-color: rgb(255, 96, 79);
+  --primary-color-hover: rgb(255, 123, 108);
+  --font-family: "Barlow Condensed", sans-serif;
+  --border-radius: 10px;
+}
+
+body {
+  background: var(--background-color);
+  margin: 0px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: unset;
+  width: 100%;
+}
+body button {
+  width: 100%;
+  height: 100%;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+body button:hover {
+  background-color: var(--primary-color-hover);
+}
+body textarea {
+  resize: none;
+  font-family: inherit;
+}
+body h1 {
+  width: 100%;
+}
+body h2 {
+  width: 100%;
+}
+body h3 {
+  width: 100%;
+}
+body p {
+  width: 100%;
+}
+body a {
+  text-decoration: none;
+}
+
+body[data-aos-duration="4000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="4000"] {
+  transition-duration: 4000ms;
+}
+
+.material-symbols-outlined {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.6em;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.hero {
+  width: 100vw;
+  padding-top: 70px;
+  height: 50vh;
+}
+.hero .hero-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main-container {
+  border-style: hidden;
+  box-shadow: var(--text-color) 1px 0px 10px;
+  border-radius: var(--border-radius);
+  margin: 50px;
+  padding-bottom: 50px;
+  height: 100%;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.main-container .main-h2 {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  color: var(--page-nav-color);
+  font-weight: 300;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+}
+.main-container .hero-container {
+  margin-top: 20px;
+  font-size: 1.3em;
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  float: inline-end;
+}
+.main-container .hero-container .hero-items {
+  flex-shrink: 3;
+}
+.main-container .hero-container p {
+  display: flex;
+}
+.main-container .info-container {
+  position: relative;
+  margin-top: 40px;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .info-container .info-message {
+  padding: 20px;
+  width: 40%;
+  font-size: 1.3em;
+  border-width: 3px;
+  border-radius: var(--border-radius);
+  border-style: outset;
+}
+.main-container .excersice {
+  margin-top: 80px;
+  width: 90%;
+  height: 100%;
+}
+.main-container .excersice .excersice-container {
+  padding-left: 5%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 60px;
+}
+.main-container .excersice .excersice-container .excersice-items {
+  padding-bottom: 10px;
+  border-style: hidden;
+  border-radius: 20px;
+  width: 80%;
+  background-color: var(--secondary-color);
+  transition: 1s all;
+}
+.main-container .excersice .excersice-container .excersice-items:hover {
+  translate: -6px -6px;
+  box-shadow: 1px 0px 15px rgb(182, 182, 182);
+}
+.main-container .excersice .excersice-container .video {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.main-container .excersice .excersice-container .video .video-item {
+  width: 30%;
+}
+.main-container .excersice .excersice-container .video .input-div {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main-container .excersice .excersice-container .video .input-div label {
+  font-size: 1.3em;
+}
+.main-container .excersice .excersice-container .form-submit {
+  margin-left: 40%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+.main-container .excersice .excersice-container .form-submit .form-submit-btn {
+  border-radius: var(--border-radius);
+  border: hidden;
+  font-size: 1.4em;
+  background-color: var(--primary-color);
+  width: 100%;
+  cursor: pointer;
+  transition: 1s all;
+}
+.main-container .excersice .excersice-container .form-submit .form-submit-btn:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.swal-overlay {
+  background-color: rgba(165, 53, 43, 0.09);
+}
+
+.swal-button {
+  padding: 7px 19px;
+  border-radius: var(--border-radius);
+  background-color: var(--page-nav-color);
+  font-size: 15px;
+  height: 50px;
+  width: 100px;
+  color: var(--other-text-color);
+  transition: 0.8s ease-in-out;
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: var(--page-nav-hover);
+}
+
+.swal-button:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.swal-icon--warning {
+  border-color: var(--primary-color);
+  -webkit-animation: pulseWarning 0.75s 60 alternate;
+  animation: pulseWarning 0.75s 60 alternate;
+}
+
+.swal-icon--warning__body {
+  width: 5px;
+  height: 47px;
+  top: 10px;
+  border-radius: 2px;
+  margin-left: -2px;
+}
+
+.swal-icon--warning__body,
+.swal-icon--warning__dot {
+  position: absolute;
+  left: 50%;
+  background-color: var(--primary-color);
+}
+
+.swal-icon--warning__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-left: -4px;
+  bottom: -11px;
+}
+
+@-webkit-keyframes pulseWarning {
+  0% {
+    border-color: white;
+  }
+  to {
+    border-color: var(--primary-color);
+  }
+}
+@keyframes pulseWarning {
+  0% {
+    border-color: white;
+  }
+  to {
+    border-color: var(--primary-color);
+  }
+}
+input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  border-width: 2px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+input[type=checkbox]::before {
+  content: "✔";
+  position: absolute;
+  font-size: 3em;
+  right: -1px;
+  top: -0.1em;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+input[type=checkbox]:checked::before {
+  visibility: visible;
+}
+
+input[type=checkbox]:disabled {
+  border-color: black;
+  background: #ddd;
+  color: gray;
+}/*# sourceMappingURL=styles.css.map */

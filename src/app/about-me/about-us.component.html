@@ -1,0 +1,90 @@
+<unity-nav></unity-nav>
+
+<section class="hero-section" >
+  <div class="hero-container" data-aos="zoom-out-up" data-aos-duration="1500">
+    <div class="hero-items">
+      <div class="hero-headers">
+        <h1>Blessing Uhunmwangho</h1>
+        <p>
+          Hello, I'm Blessing Uhunmwangho, an aspiring Frontend developer. I
+          created this website to display my passion for fitness, wellness and
+          technology. This project was completed using Angular, typescript, html
+          and scss.
+        </p>
+        <div class="hero-resume">
+          <a
+            href="assets/pdf/Blessing Uhunmwangho Resume.pdf"
+            download="Blessing_resume"
+            >Download Resume</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="hero-items">
+      <img
+        src="assets/images/transparentpic.png"
+        alt="Picture of web developer"
+      />
+    </div>
+  </div>
+</section>
+
+<section class="specialization-section">
+  <div class="specialization-container">
+    <div>
+      <h2>Specializing in</h2>
+      <p>
+        Upon graduating, I plan on going into frontend development or fullstack.
+      </p>
+    </div>
+    <div class="specialization-description" data-aos="fade-up" data-aos-duration="1500">
+      <div class="material-symbols-outlined">devices</div>
+      <h3>Software Development</h3>
+      <p>
+        I enjoy having a website design in mind and building it from scratch.
+        The more I build, the more ideas come to mind that can be implemented to
+        make the website better. I love expanding on my current skills and using
+        methods I know is popular in the market. This is why I am using Angular
+        for this project. In another project I will be using React. At the end I
+        want to be able to choose which frameworks or method is best for me. It
+        is better to be an expert in one thing than someone who knows different
+        things but does not have a specialization.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="about-container">
+    <div class="about-items">
+      <div id="experience_title" (click)='showDiv("experience", "experience_title")' class="title">Experience</div>
+      <div class="about-list" id="experience" >
+        <li>
+          - One year of experience building web appilications using Angular and
+          React
+        </li>
+        <li>- Worked as a Software Developer at Unadat</li>
+        <li>- Worked as a Product specialist at Taxact</li>
+      </div>
+    </div>
+
+    <div class="about-items">
+      <div id="education_title" (click)='showDiv("education", "education_title")' class="title">Education</div>
+      <div class="about-list" id="education">
+        <li>- Working on my Bacholors of science in Computer science</li>
+        <li>- Graduating from college on December 2024</li>
+      </div>
+    </div>
+
+    <div class="about-items">
+      <div id="skills_title" (click)='showDiv("skills", "skills_title")' class="title">Skills</div>
+      <div class="about-list" id="skills">
+        <li>- Angular and React (NextJS)</li>
+        <li>- SQL</li>
+        <li>- Typescript, Javascript, HTML and SCSS</li>
+      </div>
+    </div>
+  </div>
+</section>
+
+<unity-footer></unity-footer>

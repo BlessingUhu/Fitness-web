@@ -1,0 +1,86 @@
+<section class="signup-section">
+  <form
+    [formGroup]="signupForm"
+    (ngSubmit)="signup()"
+    class="signup-form"
+    #form="ngForm"
+  >
+    <div class="signup-container">
+      <div class="form-a-div">
+        <a
+          [routerLink]="'/login'"
+          [routerLinkActive]="'activeRoute'"
+          class="form-a"
+          >Login</a
+        >
+        <a
+          [routerLink]="'/signup'"
+          [routerLinkActive]="'activeRoute'"
+          class="form-a"
+          >Signup</a
+        >
+      </div>
+
+      <div class="input-div">
+        <input
+          class="form-inputs"
+          type="text"
+          name="name"
+          value=""
+          placeholder="Name"
+          formControlName="name"
+          required
+        />
+        <small
+          style="color: red"
+          [hidden]="
+            signupForm.get('name')?.valid || signupForm.get('name')?.untouched">Invalid Name*</small>
+      </div>
+
+      <div class="input-div">
+        <input
+          class="form-inputs"
+          type="email"
+          name="email"
+          value=""
+          placeholder="Email"
+          formControlName="email"
+          required
+        />
+        <small
+          style="color: red"
+          [hidden]="
+            signupForm.get('email')?.valid || signupForm.get('email')?.untouched">Invalid Email Address*</small>
+      </div>
+
+
+      <div class="input-div">
+        <input
+          class="form-inputs"
+          id="passwordInput"
+          type="password"
+          name="password"
+          value=""
+          placeholder="Password"
+          formControlName="password"
+          required
+        />
+        <small
+          style="color: red"
+          [hidden]="
+            signupForm.get('password')?.valid ||
+            signupForm.get('password')?.untouched">Invalid Password*</small>
+      </div>
+
+      <div class="signup-btn-div">
+        <button class="signup-btn" type="submit">Sign up</button>
+      </div>
+
+      <div>
+        Already have an account?
+        <a class="acc-already" [routerLink]="'/login'">LOGIN</a>
+      </div>
+    </div>
+  </form>
+</section>
+<!-- {{ userSetting | json }} -->

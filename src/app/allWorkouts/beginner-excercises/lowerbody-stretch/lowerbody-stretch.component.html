@@ -1,0 +1,201 @@
+<unity-nav></unity-nav>
+<section>
+  <div class="hero">
+    <img class="hero-image" src="assets/images/beginner-1.jpeg" alt="" />
+  </div>
+  <div class="main-container">
+    <h1 style="text-transform: uppercase; width: fit-content" id="workoutTitle">
+      Lower Body and Stretch
+    </h1>
+    <h2 class="main-h2">Booty Work</h2>
+    <div class="hero-container">
+      <div>
+        <p>
+          <span class="material-symbols-outlined"> timer </span>&nbsp;&nbsp;40
+          Mins
+        </p>
+        <p>
+          <span class="material-symbols-outlined"> battery_0_bar </span>
+          &nbsp;&nbsp;Beginner
+        </p>
+      </div>
+
+      <div>
+        <p>
+          <span class="material-symbols-outlined"> checklist_rtl</span>
+          &nbsp;&nbsp;Recommeded Set
+        </p>
+        <p>
+          <span class="material-symbols-outlined"> fitness_center </span>
+          &nbsp;&nbsp;Resistance
+        </p>
+      </div>
+    </div>
+    <div class="info-container">
+      <div class="info-message" style="font-weight: 300">
+        <h3>BENEFITS</h3>
+        Great for beginners looking to put in less weights but still experience
+        great results. Highly recommended if you are looking to forward work on
+        your hamstrings, hips, glutes, and calfs. Lets get right into it!
+      </div>
+      <div class="info-message">
+        <h3>EQUIPMENTS</h3>
+        <ul *ngFor="let equipment of equipments">
+          <li style="list-style: circle; font-weight: 300">{{ equipment }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- EXCERCISE SECTION -->
+    <div class="excersice">
+      <h2 style="padding-left: 10%; margin-bottom: 30px">EXCERCISES</h2>
+
+      <!-- FORM -->
+      <form [formGroup]="workoutForm" id="workoutForm" (ngSubmit)="onSubmit()">
+        <div class="excersice-container">
+          <div class="excersice-items" *ngFor="let workout of workouts">
+            <div class="video">
+              <video
+                width="200"
+                height="130"
+                controls
+                poster="{{ workout.poster }}"
+              ></video>
+              <div class="video-item">
+                <p style="font-size: 1.6em">{{ workout.name }}</p>
+                <p
+                  style="
+                    color: var(--other-color);
+                    font-weight: 300;
+                    font-size: 1.2em;
+                  "
+                >
+                  {{ workout.reps }} &nbsp; &dot; &nbsp; {{ workout.sets }}
+                </p>
+              </div>
+
+              <div class="input-div">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  value=""
+                  formControlName="{{ workout.formControlName }}"
+                />
+                <label
+                  *ngIf="isChecked(workout.formControlName)"
+                  data-aos="zoom-out-left"
+                  data-aos-once="true">Done</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="excersice-items">
+            <div class="video">
+              <video
+                width="200"
+                height="130"
+                controls
+                poster=""
+              ></video>
+              <div class="video-item">
+                <p style="font-size: 1.6em" class="workoutName">Hip Flexor Lunge</p>
+                <p
+                  style="
+                    color: var(--other-color);
+                    font-weight: 300;
+                    font-size: 1.2em;
+                  "
+                >
+                  10 reps &nbsp; 2 sets
+                </p>
+              </div>
+              <input type="checkbox" name="checkbox" value="" class="checkBox" formControlName="hipFlexor"/>
+            </div>
+          </div>
+
+          <div class="excersice-items">
+            <div class="video">
+              <video
+                width="200"
+                height="130"
+                controls
+                poster=""
+              ></video>
+              <div class="video-item">
+                <p style="font-size: 1.6em" class="workoutName">Barbell Squats</p>
+                <p
+                  style="
+                    color: var(--other-color);
+                    font-weight: 300;
+                    font-size: 1.2em;
+                  "
+                >
+                  10 reps &nbsp; 3 sets
+                </p>
+              </div>
+              <input type="checkbox" name="checkbox" value="" class="checkBox" formControlName="barbellSquats"/>
+            </div>
+          </div>
+
+          <div class="excersice-items">
+            <div class="video">
+              <video
+                width="200"
+                height="130"
+                controls
+                poster=""
+              ></video>
+              <div class="video-item">
+                <p style="font-size: 1.6em" class="workoutName">Forward Lunge</p>
+                <p
+                  style="
+                    color: var(--other-color);
+                    font-weight: 300;
+                    font-size: 1.2em;
+                  "
+                >
+                  10 reps &nbsp; 2 sets
+                </p>
+              </div>
+              <input type="checkbox" name="checkbox" value="" class="checkBox" formControlName="forwardLunge"/>
+            </div>
+          </div>
+
+          <div class="excersice-items">
+            <div class="video">
+              <video
+                width="200"
+                height="130"
+                controls
+                poster=""
+              ></video>
+              <div class="video-item">
+                <p style="font-size: 1.6em" class="workoutName">Calf raises</p>
+                <p
+                  style="
+                    color: var(--other-color);
+                    font-weight: 300;
+                    font-size: 1.2em;
+                  "
+                >
+                  12 reps &nbsp; 2 sets
+                </p>
+              </div>
+              <input type="checkbox" name="checkbox" value="" class="checkBox" formControlName="calfRaises"/>
+            </div>
+          </div> -->
+          <div class="form-submit">
+            <button
+              [disabled]="workoutForm.pristine"
+              class="form-submit-btn"
+              type="submit"
+            >
+              Finish
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<unity-footer></unity-footer>

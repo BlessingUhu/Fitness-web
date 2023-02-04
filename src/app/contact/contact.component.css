@@ -1,0 +1,120 @@
+.contact-section {
+  background-color: var(--secondary-color);
+  padding-top: 100px;
+}
+.contact-section .contact-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section .contact-header h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+.contact-section .contact-container {
+  height: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-section .contact-container .contact-info {
+  background-color: var(--text-color);
+  padding: 15px;
+  margin: 20px;
+  border-radius: 20px;
+}
+.contact-section .contact-container .contact-info .contact-message {
+  color: rgb(239, 229, 229);
+}
+.contact-section .contact-container .contact-info .contact-message h2 {
+  margin-bottom: 0;
+}
+.contact-section .contact-container .contact-info .contact-message p {
+  font-weight: 300;
+}
+.contact-section .contact-container .contact-info .contact-handles {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.contact-section .contact-container .contact-info .contact-handles .callAndMail {
+  padding-top: 20px;
+  display: flex;
+}
+.contact-section .contact-container .contact-info .contact-handles .callAndMail a {
+  color: rgb(239, 229, 229);
+}
+.contact-section .contact-container .contact-info .contact-links {
+  font-size: 1.3em;
+}
+.contact-section .contact-container .contact-info .contact-links a {
+  background-color: var(--primary-color);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px;
+  border-radius: 10px;
+  color: var(--text-color);
+}
+.contact-section .contact-container .contact-form {
+  align-self: center;
+  padding: 20px;
+}
+.contact-section .contact-container .contact-form small {
+  color: red;
+}
+.contact-section .contact-container .contact-form .input-div {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 30px;
+}
+.contact-section .contact-container .contact-form .input-div input {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.2em;
+  padding: 10px;
+  border: solid var(--page-nav-color);
+  border-radius: var(--border-radius);
+  outline: none;
+  border-width: 0.5px;
+}
+.contact-section .contact-container .contact-form .input-div input::-moz-placeholder {
+  opacity: 0.5;
+}
+.contact-section .contact-container .contact-form .input-div input:-ms-input-placeholder {
+  opacity: 0.5;
+}
+.contact-section .contact-container .contact-form .input-div input::placeholder {
+  opacity: 0.5;
+}
+.contact-section .contact-container .contact-form .textarea-div {
+  margin-bottom: 30px;
+}
+.contact-section .contact-container .contact-form .textarea-div textarea {
+  width: 100%;
+  border-width: 0.5px;
+  margin-top: 10px;
+  padding: 10px;
+  height: 100px;
+  border-color: var(--page-nav-color);
+  outline: var(--text-color);
+  font-size: 1.2em;
+  border-radius: var(--border-radius);
+}
+.contact-section .contact-container .contact-form form {
+  margin-bottom: 30px;
+}
+.contact-section .contact-container .btn {
+  height: 50px;
+}
+.contact-section .contact-container .btn button {
+  font-size: 1.1em;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  border: hidden;
+}
+.contact-section .contact-container .btn button:hover {
+  background-color: var(--primary-color-hover);
+}/*# sourceMappingURL=contact.component.css.map */

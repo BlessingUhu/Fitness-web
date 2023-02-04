@@ -1,0 +1,194 @@
+<unity-nav></unity-nav>
+<section class="intro-page">
+  <div class="intro-container">
+    <div class="intro-items">
+      <div
+        class="intro-headers"
+        data-aos="flip-left"
+        data-aos-duration="2000"
+        data-aos-once="true"
+      >
+        <h5 class="intro-h5">Online Workout Tutorials.</h5>
+        <p class="intro-p">
+          A healthy lifestyle starts with you. <br />
+          Make the change today.
+        </p>
+        <h5 class="intro-h5-message">
+          Some handful of videos to get you started on your journey!
+        </h5>
+      </div>
+    </div>
+    <div class="intro-items">
+      <img
+        src="assets/images/workout-intro-image.jpeg"
+        alt="Man doing bench press"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- RECOMMENDATION -->
+
+<section class="select-section">
+  <div class="select-container">
+     <div class="select-items">
+    <h2>Get a recommendation</h2>
+  </div>
+    <div class="select-items">
+      <label for="">What part of your body would you like to work on?</label>
+      <select id="bodyPart" (change)="bodySectionHandler($event)">
+        <option value=0></option>
+        <option *ngFor="let parts of bodyPart">{{ parts }}</option>
+      </select>
+    </div>
+    <div class="select-items">
+      <label for="">What level of intensity do you prefer?</label>
+      <select id="intensity" (change)="intensitySelectionHandler($event)">
+        <option></option>
+        <option *ngFor="let levels of intensity">{{ levels }}</option>
+      </select>
+    </div>
+    <div class="select-btn"><button type="button" (click)="clearSelection()">Clear</button></div>
+  </div>
+</section>
+
+<!-- BEGINNER WORKOUTS -->
+<main id="beginner-workout">
+  <div class="workout-page">
+    <div class="workout-cover">
+      <div class="workout-header">
+        <h2>BEGINNER WORKOUTS</h2>
+      </div>
+      <div class="workout-container">
+        <div
+          *ngFor="let beginner of beginners"
+          class="workout-items"
+          routerLink="{{ beginner.routerLink }}"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-duration="1000"
+        >
+          <img
+            src="{{ beginner.image }}"
+            alt="People doing excersice"
+            class="workout-items-image"
+          />
+          <div class="workout-message">
+            <h3>{{ beginner.name }}</h3>
+            <h4>{{ beginner.description }}</h4>
+            <p>{{ beginner.time }} &dot; {{ beginner.type }}</p>
+            <div *ngIf="recommendBeginner(beginner)" class="recommended">
+              Recommended
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- STRENGTH WORKOUTS -->
+<main id ="strength-workout">
+  <div class="workout-page">
+    <div class="workout-cover" style="top: 40%">
+      <div class="workout-header">
+        <h2>
+          <!-- <span class="material-symbols-outlined"> sports_gymnastics </span> -->
+          STRENGTH WORKOUTS
+        </h2>
+      </div>
+      <div class="workout-container">
+        <div
+          *ngFor="let strength of strengths"
+          class="workout-items"
+          routerLink="{{ strength.routerLink }}"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-duration="1000"
+        >
+          <img
+            src="{{ strength.image }}"
+            alt="People doing excersice"
+            class="workout-items-image"
+          />
+          <div class="workout-message">
+            <h3>{{ strength.name }}</h3>
+            <h4>{{ strength.description }}</h4>
+            <p>{{ strength.time }} &dot; {{ strength.type }}</p>
+            <div *ngIf="recommendStrength(strength)" class="recommended">Recommended</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ADVANCED WORKOUTS -->
+<!-- <main>
+  <div class="workout-page">
+    <div class="workout-cover" style="top: 80%">
+      <div class="workout-header">
+        <h2>
+          <span class="material-symbols-outlined"> sports_gymnastics </span>
+          ADVANCED WORKOUTS
+        </h2>
+      </div>
+      <div class="workout-container">
+        <div class="workout-items">
+          <img
+            src="assets/images/advanced-1.jpeg"
+            alt="Dumbell"
+            class="workout-items-image"
+          />
+          <div class="workout-message">
+            <h3>Intense Lower Body</h3>
+            <h4>Increase muscle mass</h4>
+            <p>60 min &dot; Lower Body</p>
+            <span class="material-symbols-outlined"> favorite </span>
+          </div>
+        </div>
+
+        <div class="workout-items">
+          <img
+            class="workout-items-image"
+            src="assets/images/advanced-2.jpeg"
+          />
+          <div class="workout-message">
+            <h3>Intense Upper Body</h3>
+            <h4>Increase upper strength</h4>
+            <p>60 min &dot; Upper Body</p>
+            <span class="material-symbols-outlined"> favorite </span>
+          </div>
+        </div>
+
+        <div class="workout-items">
+          <img
+            class="workout-items-image"
+            src="assets/images/advanced-3.jpeg"
+          />
+          <div class="workout-message">
+            <h3>Intense Total Body</h3>
+            <h4>High impact excersie</h4>
+            <p>60 min &dot; Full Body</p>
+            <span class="material-symbols-outlined"> favorite </span>
+          </div>
+        </div>
+
+        <div class="workout-items">
+          <img
+            class="workout-items-image"
+            src="assets/images/advanced-4.jpeg"
+          />
+          <div class="workout-message">
+            <h3>Intense Cardio</h3>
+            <h4>Excess Fat burn</h4>
+            <p>40 min &dot; Full Body</p>
+            <span class="material-symbols-outlined"> favorite </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main> -->
+
+<unity-footer></unity-footer>

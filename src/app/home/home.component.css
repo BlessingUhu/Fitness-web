@@ -1,0 +1,190 @@
+/* MAIN PAGE */
+/* Main Page Flex */
+.hero-page {
+  padding-top: 70px;
+  margin-bottom: 20px;
+  height: 100%;
+  width: 100%;
+}
+.hero-page .hero-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.hero-page .hero-container .hero-item1 {
+  font-size: 1.6em;
+  align-self: center;
+  padding: 20px;
+  width: 30%;
+  height: 100%;
+  border-right-style: inset;
+  border-color: var(--page-nav-hover);
+  border-width: 3px;
+}
+.hero-page .hero-container .hero-item1 h1 {
+  padding: 15px;
+  border-style: inset;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-color: var(--page-nav-hover);
+  border-radius: 3px;
+  border-width: 1px;
+  background-color: var(--secondary-color);
+}
+.hero-page .hero-container .hero-item1 #hero-item-h3 span {
+  font-weight: 300;
+}
+.hero-page .hero-container .hero-item1 .hero-btn {
+  margin-top: 80px;
+  width: 50%;
+  height: 70px;
+}
+.hero-page .hero-container .hero-item1 .hero-btn button {
+  color: var(--other-text-color);
+  font-size: 0.8em;
+  border-style: hidden;
+  border-radius: var(--border-radius);
+  width: 100%;
+  height: 100%;
+  background-color: var(--page-nav-color);
+  transition: 0.5s ease-in;
+  cursor: pointer;
+}
+.hero-page .hero-container .hero-item1 .hero-btn button:hover {
+  background-color: var(--page-nav-hover);
+  color: var(--other-text-color);
+}
+.hero-page .hero-container .hero-item2 {
+  width: 45%;
+}
+.hero-page .hero-container .hero-item2 img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.flex-section {
+  height: 100%;
+}
+.flex-section .flex-container {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.flex-section .flex-container .flex-items {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  text-align: center;
+  border-radius: var(--border-radius);
+  width: 40%;
+  height: 100%;
+}
+.flex-section .flex-container .flex-items .flex-items-wrapper {
+  padding-top: 10%;
+  height: 100%;
+  width: 100%;
+}
+.flex-section .flex-container .flex-items .material-symbols-outlined {
+  font-size: 2.5em;
+}
+.flex-section .flex-container .flex-items .flex-h2 {
+  font-size: 1.7em;
+  text-decoration: overline;
+}
+.flex-section .flex-container .flex-items .flex-p {
+  font-weight: 200;
+  font-size: 1.3em;
+}
+.flex-section .flex-container .flex-items .flex-a {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: var(--page-nav-color);
+}
+
+/*INDEXGUIDE CONTAINER */
+.indexguide-section {
+  height: 100%;
+  width: 100%;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+.indexguide-section .indexguide-headers {
+  text-align: center;
+}
+.indexguide-section .indexguide-flex {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.indexguide-section .indexguide-flexitems {
+  color: var(--text-color);
+  width: 35%;
+  height: 100%;
+  padding: 15px;
+  text-decoration: unset;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.indexguide-section .indexguide-h3 {
+  font-size: 1.5em;
+}
+.indexguide-section .img-div {
+  width: 100%;
+  height: 100%;
+}
+.indexguide-section .img-div img {
+  max-width: 100%;
+  height: 100%;
+}
+.indexguide-section .indexguide-msg {
+  text-align: start;
+  margin-left: 15px;
+}
+.indexguide-section .indexguide-msg h4 {
+  margin-top: -15px;
+  font-size: 1.3em;
+  text-transform: capitalize;
+}
+.indexguide-section .indexguide-msg h5 {
+  text-transform: uppercase;
+  word-spacing: 4px;
+  font-weight: unset;
+  color: var(--secondary-color);
+  font-size: 1.2em;
+  transition: 0.5s;
+}
+.indexguide-section .indexguide-btn {
+  margin-bottom: 80px;
+  width: 40%;
+  height: 70px;
+}
+.indexguide-section .indexguide-btn button {
+  font-size: 1.3em;
+  border-style: hidden;
+  color: var(--other-text-color);
+  border-radius: var(--border-radius);
+  width: 100%;
+  height: 100%;
+  background-color: var(--page-nav-color);
+  transition: 0.5s ease-in;
+  cursor: pointer;
+}
+.indexguide-section .indexguide-btn button:hover {
+  background-color: var(--page-nav-hover);
+  color: var(--other-text-color);
+}/*# sourceMappingURL=home.component.css.map */

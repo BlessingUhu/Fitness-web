@@ -1,0 +1,107 @@
+<unity-nav></unity-nav>
+<section>
+  <div class="hero">
+    <img class="hero-image" src="assets/images/strength-1.jpeg" alt="" />
+  </div>
+  <div class="main-container">
+    <h1 style="text-transform: uppercase; width: fit-content" id="workoutTitle">
+      Lower Body Strength
+    </h1>
+    <h2 class="main-h2">Booty Work</h2>
+    <div class="hero-container">
+      <div>
+        <p>
+          <span class="material-symbols-outlined"> timer </span>&nbsp;&nbsp;40
+          Mins
+        </p>
+        <p>
+          <span class="material-symbols-outlined"> battery_4_bar </span>
+          &nbsp;&nbsp;Intermediate
+        </p>
+      </div>
+
+      <div>
+        <p>
+          <span class="material-symbols-outlined"> checklist_rtl</span>
+          &nbsp;&nbsp;Recommeded Set
+        </p>
+        <p>
+          <span class="material-symbols-outlined"> fitness_center </span>
+          &nbsp;&nbsp;Resistance
+        </p>
+      </div>
+    </div>
+    <div class="info-container">
+      <div class="info-message" style="font-weight: 300">
+        <h3>BENEFITS</h3>
+        Looking to build some muslces? You in the right place. Highly
+        recommended if you are looking for an intense upper body workout. Lets
+        get right into it!
+      </div>
+      <div class="info-message">
+        <h3>EQUIPMENTS</h3>
+        <ul *ngFor="let equipment of equipments">
+          <li style="list-style: circle; font-weight: 300">{{ equipment }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- EXCERCISE SECTION -->
+    <div class="excersice">
+      <h2 style="padding-left: 10%; margin-bottom: 30px">EXCERCISES</h2>
+
+      <form [formGroup]="workoutForm" id="workoutForm" (ngSubmit)="onSubmit()">
+        <div class="excersice-container">
+          <div class="excersice-items" *ngFor="let workout of workouts">
+            <div class="video">
+              <video
+                width="200"
+                height="130"
+                controls
+                poster="{{ workout.poster }}"
+              ></video>
+              <div class="video-item">
+                <p style="font-size: 1.6em">{{ workout.name }}</p>
+                <p
+                  style="
+                    color: var(--other-color);
+                    font-weight: 300;
+                    font-size: 1.2em;
+                  "
+                >
+                  {{ workout.reps }} &nbsp; &dot; &nbsp; {{ workout.sets }}
+                </p>
+              </div>
+
+              <div class="input-div">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  value=""
+                  formControlName="{{ workout.formControlName }}"
+                />
+                <label
+                  *ngIf="isChecked(workout.formControlName)"
+                  data-aos="zoom-out-left"
+                  data-aos-once="true"
+                  >Done</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button
+              [disabled]="workoutForm.pristine"
+              class="form-submit-btn"
+              type="submit"
+            >
+              Finish
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<unity-footer></unity-footer>

@@ -1,0 +1,65 @@
+<section class="form">
+  <form #form="ngForm" [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="form-container">
+      <div class="form-a-div">
+        <a
+          [routerLink]="'/login'"
+          [routerLinkActive]="'activeRoute'"
+          class="form-a"
+          >Login</a
+        >
+        <a
+          [routerLink]="'/signup'"
+          [routerLinkActive]="'activeRoute'"
+          class="form-a"
+          >Signup</a
+        >
+      </div>
+
+      <div class="input-div" id="usernameInput">
+        <input
+          class="form-inputs"
+          type="email"
+          name="username"
+          value=""
+          placeholder="Email"
+          formControlName="email"
+          required
+        />
+        <small
+          style="color: red"
+          *ngIf="
+            loginForm.get('email')?.invalid && loginForm.get('email')?.touched
+          "
+          >Invalid email*</small
+        >
+      </div>
+      <div class="input-div" id="passwordInput">
+        <input
+          class="form-inputs"
+          type="password"
+          name="password"
+          value=""
+          placeholder="Password"
+          formControlName="password"
+          required
+        />
+        <small
+          style="color: red"
+          *ngIf="
+            loginForm.get('password')?.invalid && loginForm.get('password')?.touched
+          "
+          >Invalid password*</small
+        >
+      </div>
+      <div class="forgot-password"><a>Forgot password?</a></div>
+      <div class="login-btn-div">
+        <button class="login-btn" type="submit">Login</button>
+      </div>
+      <div>
+        Don't have an account?
+        <a class="acc-already" [routerLink]="'/signup'">SIGN UP</a>
+      </div>
+    </div>
+  </form>
+</section>

@@ -1,0 +1,46 @@
+<header>
+  <nav class="nav-bar">
+    <div>
+      <div [routerLink]="'/home'" class="logo">
+        <span class="material-symbols-outlined"> sports_gymnastics </span>
+        <span class="logo-span">Fitness</span>
+      </div>
+    </div>
+    <div class="nav-items">
+      <div
+        class="nav-links"
+        [routerLink]="'/home'"
+        [routerLinkActive]="'active-navlink'"
+      >
+        Home
+      </div>
+
+      <div
+        class="nav-links"
+        [routerLink]="'/workouts'"
+        [routerLinkActive]="'active-navlink'"
+      >
+        Workouts
+      </div>
+
+      <div
+        class="nav-links"
+        [routerLink]="'/about'"
+        [routerLinkActive]="'active-navlink'"
+      >
+        About Me
+      </div>
+
+      <div
+        class="nav-links"
+        [routerLink]="'/contact'"
+        [routerLinkActive]="'active-navlink'"
+      >
+        Contact
+      </div>
+      <div class="nav-links">
+        <div class="btn"><button [routerLink]="'/login'">Logout</button></div>
+      </div>
+    </div>
+  </nav>
+</header>
