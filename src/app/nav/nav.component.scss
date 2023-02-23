@@ -32,25 +32,76 @@ header {
         width: 10%;
         height: fit-content;
         padding: 10px;
-        .btn {
-          height: 50px;
-          button {
-            height: 100%;
-            width: 100%;
-            font-size: 0.8em;
-            border-radius: var(--border-radius);
-            border: unset;
-            background-color: var(--primary-color);
-          }
-          button:hover {
-            background-color: var(--primary-color-hover);
-          }
+      }
+      .btn {
+        width: 15%;
+        height: 50px;
+        button {
+          height: 100%;
+          width: 100%;
+          font-size: 0.8em;
+          border-radius: var(--border-radius);
+          border: unset;
+          background-color: var(--primary-color);
+        }
+        button:hover {
+          background-color: var(--primary-color-hover);
         }
       }
     }
   }
 }
 
+#openAndClose {
+  display: none;
+}
+
 .active-navlink {
   border-bottom: solid var(--primary-color) 3px;
+}
+
+@media (max-width: 650px) {
+  #header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    // height: 100%;
+    #nav {
+      // display: flex;
+      position: relative;
+      display: block;
+      flex-direction: column;
+      justify-content: space-around;
+      .logo {
+        width: fit-content;
+        padding: 20px;
+      }
+      #nav-items {
+        display: none;
+        height: 400px;
+        // display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .nav-links {
+          text-align: center;
+          width: 30%;
+        }
+        .btn {
+          width: 50%;
+          button {
+            width: 100%;
+          }
+        }
+      }
+
+      #openAndClose {
+        display: block;
+        position: absolute;
+        right: 10%;
+        top: 20px;
+        font-size: 1.3em;
+        cursor: pointer;
+      }
+    }
+  }
 }

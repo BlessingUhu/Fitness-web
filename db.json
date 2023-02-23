@@ -17,6 +17,12 @@
       "numOfWorkouts": 5,
       "date": "1/16/2023",
       "id": 3
+    },
+    {
+      "title": " Upper Body Strength ",
+      "numOfWorkouts": 5,
+      "date": "2/6/2023",
+      "id": 4
     }
   ]
 }

@@ -58,7 +58,6 @@ export class FlexibilityComponent extends Excercise implements OnInit {
       formControlName: 'lyingQuad',
     },
   ];
-
   
   ngOnInit(): void {
     this.workoutForm = this.builder.group({

@@ -22,11 +22,11 @@ export class ApiService {
 
   //POST WORKOUT
   postWorkout(data: any) {
-    return this.http.post<any>('http://localhost:3006/Workout', data);
+    return this.http.post<any>('http://localhost:3000/Workout', data);
   }
 
   getWorkout() {
-    return this.http.get('http://localhost:3006/Workout');
+    return this.http.get('http://localhost:3000/Workout');
   }
 
   //LOGIN API

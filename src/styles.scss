@@ -20,35 +20,21 @@ body {
   font-weight: unset;
   width: 100%;
 
-  button{
+  button {
     width: 100%;
     height: 100%;
     transition: 0.6s ease;
     cursor: pointer;
   }
-  button:hover{
+  button:hover {
     background-color: var(--primary-color-hover);
   }
 
-  textarea{
+  textarea {
     resize: none;
     font-family: inherit;
   }
-
-
-  h1{
-    width: 100%;
-  }
-  h2{
-    width: 100%;
-  }
-  h3{
-    width: 100%;
-  }
-  p{
-    width: 100%;
-  }
-  a{
+  a {
     text-decoration: none;
   }
 }
@@ -83,10 +69,9 @@ body[data-aos-duration="4000"] [data-aos],
   box-shadow: var(--text-color) 1px 0px 10px;
   border-radius: var(--border-radius);
   margin: 50px;
-  padding-bottom: 50px;
   height: 100%;
-  padding-left: 30px;
-  padding-top: 30px;
+  padding: 20px;
+
   .main-h2 {
     background-color: var(--secondary-color);
     border-radius: 10px;
@@ -98,12 +83,11 @@ body[data-aos-duration="4000"] [data-aos],
   .hero-container {
     margin-top: 20px;
     font-size: 1.3em;
-    width: 340px;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    float: inline-end;
 
     .hero-items {
       flex-shrink: 3;
@@ -172,8 +156,6 @@ body[data-aos-duration="4000"] [data-aos],
       .form-submit {
         margin-left: 40%;
         height: 80px;
-        display: flex;
-        justify-content: center;
         width: 20%;
         .form-submit-btn {
           border-radius: var(--border-radius);
@@ -186,6 +168,114 @@ body[data-aos-duration="4000"] [data-aos],
         }
         .form-submit-btn:hover {
           background-color: var(--primary-color-hover);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .hero {
+    width: 100%;
+    padding-top: 70px;
+    height: 100%;
+  }
+
+  .main-container {
+    border-style: hidden;
+    box-shadow: var(--text-color) 1px 0px 10px;
+    border-radius: var(--border-radius);
+    margin: 0px;
+    margin-bottom: 50px;
+    height: 100%;
+
+    .hero-container {
+      margin-top: 20px;
+      font-size: 1.3em;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .info-container {
+      position: relative;
+      margin-top: 40px;
+      width: fit-content;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .info-message {
+        padding: 5px;
+        width: 100%;
+        height: 100%;
+        font-size: 1.3em;
+        border-width: 3px;
+        border-radius: var(--border-radius);
+        border-style: outset;
+      }
+    }
+    .excersice {
+      margin-top: 80px;
+      width: 100%;
+      height: 100%;
+      .excersice-container {
+        padding-left: 5%;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        gap: 60px;
+        .excersice-items {
+          padding-bottom: 10px;
+          border-style: hidden;
+          border-radius: 20px;
+          width: 100%;
+          background-color: var(--secondary-color);
+          transition: 1s all;
+        }
+        .excersice-items:hover {
+          translate: -6px -6px;
+          box-shadow: 1px 0px 15px rgb(182, 182, 182);
+        }
+
+        .video {
+          padding-top: 10px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          .video-item {
+            color: var(--page-nav-color);
+            width: 90%;
+          }
+          .input-div {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+          }
+        }
+        .form-submit {
+          margin-left: 0%;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          width: 60%;
+          .form-submit-btn {
+            border-radius: var(--border-radius);
+            border: hidden;
+            font-size: 1.4em;
+            background-color: var(--primary-color);
+            width: 100%;
+            cursor: pointer;
+            transition: 1s all;
+          }
+          .form-submit-btn:hover {
+            background-color: var(--primary-color-hover);
+          }
         }
       }
     }

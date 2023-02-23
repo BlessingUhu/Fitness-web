@@ -1,0 +1,109 @@
+.form {
+  position: relative;
+  color: black;
+}
+
+.form-container {
+  background-color: var(--secondary-color);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 0 10px var(--text-color);
+  width: 50%;
+  height: 650px;
+  left: 25%;
+  top: 100px;
+}
+.form-container .form-a-div {
+  display: flex;
+  width: 40%;
+  height: 100px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.form-container .form-a-div .form-a {
+  align-self: center;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5em;
+  width: 100%;
+  height: 60%;
+  text-decoration: none;
+  color: var(--text-color);
+}
+.form-container .form-a-div .activeRoute {
+  border-style: inset;
+  border-color: var(--primary-color);
+  border-radius: 5px;
+}
+.form-container .input-div {
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 10px;
+  flex-shrink: 2;
+  width: 65%;
+  height: 70px;
+  margin-bottom: 50px;
+}
+.form-container .input-div .form-inputs {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--border-radius);
+  border-color: var(--primary-color);
+  background-color: inherit;
+  padding-left: 10%;
+  font-size: 1.1em;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+.form-container .form-items:focus {
+  outline: none;
+}
+.form-container .form-items::-moz-placeholder {
+  opacity: 50%;
+}
+.form-container .form-items:-ms-input-placeholder {
+  opacity: 50%;
+}
+.form-container .form-items::placeholder {
+  opacity: 50%;
+}
+.form-container #usernameInput {
+  background-image: url("/assets/icons/user-solid.svg");
+}
+.form-container #passwordInput {
+  background-image: url("/assets/icons/lock-solid.svg");
+}
+.form-container .forgot-password {
+  cursor: pointer;
+  color: var(--page-nav-hover);
+  font-size: 1.2em;
+}
+.form-container .login-btn-div {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  height: 10%;
+  width: 30%;
+}
+.form-container .login-btn {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  border-style: hidden;
+  border-radius: var(--border-radius);
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: 1s;
+  cursor: pointer;
+}
+.form-container .login-btn:hover {
+  background-color: var(--primary-color-hover);
+}
+.form-container .acc-already {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: var(--page-nav-hover);
+}/*# sourceMappingURL=login.component.css.map */

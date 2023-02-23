@@ -1,0 +1,105 @@
+header {
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.161) 0px 2px 4px, rgba(0, 0, 0, 0.11) 0px 7px 13px -3px, rgba(0, 0, 0, 0) 0px -3px 0px inset;
+}
+header .nav-bar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .nav-bar .logo {
+  font-size: 1.5em;
+  display: flex;
+}
+header .nav-bar .logo .logo-span {
+  font-size: 1.4em;
+}
+header .nav-bar .nav-items {
+  font-size: 1.4em;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .nav-bar .nav-items .nav-links {
+  cursor: pointer;
+  text-align: center;
+  width: 10%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+}
+header .nav-bar .nav-items .btn {
+  width: 15%;
+  height: 50px;
+}
+header .nav-bar .nav-items .btn button {
+  height: 100%;
+  width: 100%;
+  font-size: 0.8em;
+  border-radius: var(--border-radius);
+  border: unset;
+  background-color: var(--primary-color);
+}
+header .nav-bar .nav-items .btn button:hover {
+  background-color: var(--primary-color-hover);
+}
+
+#openAndClose {
+  display: none;
+}
+
+.active-navlink {
+  border-bottom: solid var(--primary-color) 3px;
+}
+
+@media (max-width: 650px) {
+  #header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
+  #header #nav {
+    position: relative;
+    display: block;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #header #nav .logo {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 20px;
+  }
+  #header #nav #nav-items {
+    display: none;
+    height: 400px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  #header #nav #nav-items .nav-links {
+    text-align: center;
+    width: 30%;
+  }
+  #header #nav #nav-items .btn {
+    width: 50%;
+  }
+  #header #nav #nav-items .btn button {
+    width: 100%;
+  }
+  #header #nav #openAndClose {
+    display: block;
+    position: absolute;
+    right: 10%;
+    top: 20px;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=nav.component.css.map */

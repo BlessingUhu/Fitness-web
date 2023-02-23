@@ -2,7 +2,7 @@
   padding: 80px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
   .hero-container {
     height: max-content;
     display: flex;
@@ -100,4 +100,117 @@
       }
     }
   }
+}
+
+@media (max-width: 700px) {
+  .hero-section {
+    padding: 0px;
+    padding-top: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-bottom: 30px;
+    .hero-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding-bottom: 30px;
+
+      .hero-headers {
+        padding:5px;
+        font-size: 1.3em;
+        p {
+          font-weight: 300;
+          margin-bottom: 60px;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .hero-resume {
+        a {
+          border-radius: 20px;
+          padding: 15px;
+          width: fit-content;
+          background-color: var(--page-nav-color);
+          color: var(--other-text-color);
+        }
+      }
+    }
+  }
+
+  .specialization-section {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+
+  .specialization-container {
+    margin-left: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: 2em;
+    }
+    p {
+      font-weight: 300;
+      font-size: 1.3em;
+    }
+
+    .specialization-description {
+      background-color: var(--page-nav-color);
+      color: var(--other-text-color);
+      margin-top: 50px;
+      padding: 20px;
+      border-radius: 60px;
+      font-size: 1.3em;
+    }
+  }
+}
+
+.about-section {
+  margin-bottom: 200px;
+  height: 100%;
+  .about-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.4em;
+
+    .about-items {
+      height: 100%;
+      width: 90%;
+
+      .about-list {
+        border-radius: 5px;
+        padding: 5px;
+        background-color: var(--primary-color-hover);
+        display: none;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        width: 100%;
+
+        li {
+          line-height: 2;
+          list-style: none;
+        }
+      }
+      .title {
+        text-align: center;
+        padding: 10px;
+        border: solid;
+        border-radius: var(--border-radius);
+        transition: 0.5s ease;
+        cursor: pointer;
+      }
+    }
+  }
+}
 }

@@ -32,18 +32,6 @@ body textarea {
   resize: none;
   font-family: inherit;
 }
-body h1 {
-  width: 100%;
-}
-body h2 {
-  width: 100%;
-}
-body h3 {
-  width: 100%;
-}
-body p {
-  width: 100%;
-}
 body a {
   text-decoration: none;
 }
@@ -77,10 +65,8 @@ body[data-aos-duration="4000"] [data-aos],
   box-shadow: var(--text-color) 1px 0px 10px;
   border-radius: var(--border-radius);
   margin: 50px;
-  padding-bottom: 50px;
   height: 100%;
-  padding-left: 30px;
-  padding-top: 30px;
+  padding: 20px;
 }
 .main-container .main-h2 {
   background-color: var(--secondary-color);
@@ -95,12 +81,11 @@ body[data-aos-duration="4000"] [data-aos],
 .main-container .hero-container {
   margin-top: 20px;
   font-size: 1.3em;
-  width: 340px;
+  width: 40%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  float: inline-end;
 }
 .main-container .hero-container .hero-items {
   flex-shrink: 3;
@@ -168,8 +153,6 @@ body[data-aos-duration="4000"] [data-aos],
 .main-container .excersice .excersice-container .form-submit {
   margin-left: 40%;
   height: 80px;
-  display: flex;
-  justify-content: center;
   width: 20%;
 }
 .main-container .excersice .excersice-container .form-submit .form-submit-btn {
@@ -185,6 +168,111 @@ body[data-aos-duration="4000"] [data-aos],
   background-color: var(--primary-color-hover);
 }
 
+@media (max-width: 750px) {
+  .hero {
+    width: 100%;
+    padding-top: 70px;
+    height: 100%;
+  }
+  .main-container {
+    border-style: hidden;
+    box-shadow: var(--text-color) 1px 0px 10px;
+    border-radius: var(--border-radius);
+    margin: 0px;
+    margin-bottom: 50px;
+    height: 100%;
+  }
+  .main-container .hero-container {
+    margin-top: 20px;
+    font-size: 1.3em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main-container .info-container {
+    position: relative;
+    margin-top: 40px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main-container .info-container .info-message {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3em;
+    border-width: 3px;
+    border-radius: var(--border-radius);
+    border-style: outset;
+  }
+  .main-container .excersice {
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+  }
+  .main-container .excersice .excersice-container {
+    padding-left: 5%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .main-container .excersice .excersice-container .excersice-items {
+    padding-bottom: 10px;
+    border-style: hidden;
+    border-radius: 20px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    transition: 1s all;
+  }
+  .main-container .excersice .excersice-container .excersice-items:hover {
+    translate: -6px -6px;
+    box-shadow: 1px 0px 15px rgb(182, 182, 182);
+  }
+  .main-container .excersice .excersice-container .video {
+    padding-top: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main-container .excersice .excersice-container .video .video-item {
+    color: var(--page-nav-color);
+    width: 90%;
+  }
+  .main-container .excersice .excersice-container .video .input-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .main-container .excersice .excersice-container .form-submit {
+    margin-left: 0%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+  }
+  .main-container .excersice .excersice-container .form-submit .form-submit-btn {
+    border-radius: var(--border-radius);
+    border: hidden;
+    font-size: 1.4em;
+    background-color: var(--primary-color);
+    width: 100%;
+    cursor: pointer;
+    transition: 1s all;
+  }
+  .main-container .excersice .excersice-container .form-submit .form-submit-btn:hover {
+    background-color: var(--primary-color-hover);
+  }
+}
 .swal-overlay {
   background-color: rgba(165, 53, 43, 0.09);
 }

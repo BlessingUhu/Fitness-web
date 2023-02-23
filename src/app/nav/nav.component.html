@@ -1,12 +1,12 @@
-<header>
-  <nav class="nav-bar">
+<header id="header">
+  <nav class="nav-bar" id="nav">
     <div>
       <div [routerLink]="'/home'" class="logo">
         <span class="material-symbols-outlined"> sports_gymnastics </span>
         <span class="logo-span">Fitness</span>
       </div>
     </div>
-    <div class="nav-items">
+    <div class="nav-items" id="nav-items">
       <div
         class="nav-links"
         [routerLink]="'/home'"
@@ -38,9 +38,10 @@
       >
         Contact
       </div>
-      <div class="nav-links">
-        <div class="btn"><button [routerLink]="'/login'">Logout</button></div>
-      </div>
+      <!-- <div class="nav-links"> -->
+      <div class="btn"><button [routerLink]="'/login'">Logout</button></div>
+      <!-- </div> -->
     </div>
+    <div (click)="onClick()" id="openAndClose"><span id="menuToggle" class="material-symbols-outlined"> menu </span></div>
   </nav>
 </header>

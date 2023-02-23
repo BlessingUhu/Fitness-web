@@ -14,7 +14,7 @@
           Make the change today.
         </p>
         <h5 class="intro-h5-message">
-          Some handful of videos to get you started on your journey!
+          We got a handful of videos to get you started on your journey!
         </h5>
       </div>
     </div>
@@ -31,13 +31,13 @@
 
 <section class="select-section">
   <div class="select-container">
-     <div class="select-items">
-    <h2>Get a recommendation</h2>
-  </div>
+    <div class="select-items">
+      <h2>Get a recommendation</h2>
+    </div>
     <div class="select-items">
       <label for="">What part of your body would you like to work on?</label>
       <select id="bodyPart" (change)="bodySectionHandler($event)">
-        <option value=0></option>
+        <option value="0"></option>
         <option *ngFor="let parts of bodyPart">{{ parts }}</option>
       </select>
     </div>
@@ -48,7 +48,9 @@
         <option *ngFor="let levels of intensity">{{ levels }}</option>
       </select>
     </div>
-    <div class="select-btn"><button type="button" (click)="clearSelection()">Clear</button></div>
+    <div class="select-btn">
+      <button type="button" (click)="clearSelection()">Clear</button>
+    </div>
   </div>
 </section>
 
@@ -88,7 +90,7 @@
 </main>
 
 <!-- STRENGTH WORKOUTS -->
-<main id ="strength-workout">
+<main id="strength-workout">
   <div class="workout-page">
     <div class="workout-cover" style="top: 40%">
       <div class="workout-header">
@@ -115,7 +117,9 @@
             <h3>{{ strength.name }}</h3>
             <h4>{{ strength.description }}</h4>
             <p>{{ strength.time }} &dot; {{ strength.type }}</p>
-            <div *ngIf="recommendStrength(strength)" class="recommended">Recommended</div>
+            <div *ngIf="recommendStrength(strength)" class="recommended">
+              Recommended
+            </div>
           </div>
         </div>
       </div>

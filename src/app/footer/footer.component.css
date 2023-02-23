@@ -47,7 +47,7 @@
 .indexfooter .indexfooter-copyright {
   width: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 20px;
   border-top-style: outset;
   border-top-color: var(--page-nav-color);
@@ -58,4 +58,23 @@
   color: var(--page-nav-color);
   font-weight: 100;
   font-size: 1.2em;
+}
+
+@media (max-width: 650px) {
+  .indexfooter {
+    height: 100%;
+    width: 100%;
+  }
+  .indexfooter .indexfooter-wrapper {
+    display: none;
+  }
+  .indexfooter .indexfooter-copyright {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.1em;
+    display: block;
+    border-top: none;
+    margin-left: 10%;
+  }
 }/*# sourceMappingURL=footer.component.css.map */
