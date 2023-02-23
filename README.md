@@ -25,22 +25,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-## TO DO LIST:
-
-COMPLETE BY THE END OF THE WEEK:
-
-[Organize SCSS of website!!][done]
-[Fix imagees of website or remove human pictures][done]
-[Change workout hero image][done]
-[Remove Repeated Codes][done]
-[Have User set a goal THEN add recommendations][done]
-[Remove program page][done]
-[Might have to remove program page for now and also fix home page][done]
-[FIX FOOTER][done]
-[DELETED recipe page][done]
-[Work on login authentications and having several users][done]
-
-[Finish about us]`NOT DONE`
-
-NEXT WEEK:
