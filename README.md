@@ -20,7 +20,6 @@ This project is a fitness web application that allows users to follow a fitness 
 - ASP.NET: a web application framework used for building dynamic web sites, applications, and services
 - MySQL: a relational database management system used for storing and retrieving data
 
---------------------------------------------------------------------------------------
 
 ## Implementation:
 - Built using the Angular CLI and ASP.NET Core
@@ -28,6 +27,5 @@ This project is a fitness web application that allows users to follow a fitness 
 - Used TypeScript for object-oriented programming and type checking
 - Implemented server-side validation and error handling using ASP.NET Core
 
---------------------------------------------------------------------------------------------
 ## Outcome:
 This project demonstrates my skills in web development, including front-end design and back-end implementation. It showcases my ability to work with multiple programming languages and technologies and to integrate databases into a web application. I gained experience in project planning, design, and development, as well as debugging. This project is an example of my proficiency in using Angular, HTML, SCSS, TypeScript, ASP.NET, and MySQL to build a functional and user-friendly web application.
