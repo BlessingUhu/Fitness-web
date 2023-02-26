@@ -8,25 +8,25 @@ This project is a fitness web application that allows users to follow a fitness 
 
 ## Features:
 
-User registration and login
-Ability access workout routines and exercises
+- User registration and login
+- Ability access workout routines and exercises
 
 ## Technologies Used:
 
-Angular: a front-end framework for building dynamic web applications
-HTML: a markup language used for creating web pages and applications
-SCSS: a style sheet language used for creating and styling user interfaces
-TypeScript: a programming language used for building large-scale JavaScript applications
-ASP.NET: a web application framework used for building dynamic web sites, applications, and services
-MySQL: a relational database management system used for storing and retrieving data
+- Angular: a front-end framework for building dynamic web applications
+- HTML: a markup language used for creating web pages and applications
+- SCSS: a style sheet language used for creating and styling user interfaces
+- TypeScript: a programming language used for building large-scale JavaScript applications
+- ASP.NET: a web application framework used for building dynamic web sites, applications, and services
+- MySQL: a relational database management system used for storing and retrieving data
 
 --------------------------------------------------------------------------------------
 
 ## Implementation:
-Built using the Angular CLI and ASP.NET Core
-Utilized Angular Material components for UI design and layout
-Used TypeScript for object-oriented programming and type checking
-Implemented server-side validation and error handling using ASP.NET Core
+- Built using the Angular CLI and ASP.NET Core
+- Utilized Angular Material components for UI design and layout
+- Used TypeScript for object-oriented programming and type checking
+- Implemented server-side validation and error handling using ASP.NET Core
 
 --------------------------------------------------------------------------------------------
 ## Outcome:
